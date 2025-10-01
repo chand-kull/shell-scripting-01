@@ -1,7 +1,9 @@
-#!bin/bash 
+#!/bin/bash 
+
+ #!bin/bash 
 #declaring of varible 
-PERSON1=chandu
-PERSON2=honey 
+PERSON1=$1
+PERSON2=$2
 
 
 #referring variable
