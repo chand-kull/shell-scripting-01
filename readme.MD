@@ -1,8 +1,5 @@
 # Shell Script
 
-
-
-
 **steps:**
 
 * create repo in github
@@ -19,6 +16,8 @@ git add <file-name>
 * push the changes to GITHUB/ Central repo
 '''
 git ppush -u origin main 
+'''
+# this is full commend of git
 '''
 git add . ; git commit -m "some-massage"; git push -u origin main 
 '''
