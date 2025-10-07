@@ -4,6 +4,7 @@
 
 
 **steps:**
+
 * create repo in github
 * clone repo in local laptop 
 * start developing 
@@ -18,8 +19,6 @@ git add <file-name>
 * push the changes to GITHUB/ Central repo
 '''
 git ppush -u origin main 
-'''
-
 '''
 git add . ; git commit -m "some-massage"; git push -u origin main 
 '''
