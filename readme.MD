@@ -9,7 +9,7 @@ git add <file-name>
 '''
 * commit the changes
 '''
-* git cimmit -m "same massage"
+* git cimmit -m same massage
 '''
 * push the changes to GITHUB/ Central repo
 '''
