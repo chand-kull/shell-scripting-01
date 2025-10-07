@@ -17,7 +17,7 @@ git add <file-name>
 '''
 git ppush -u origin main 
 '''
-** this is full commend of git 
+# this is full commend of git 
 '''
 git add . ; git commit -m "some-massage"; git push -u origin main 
 '''
