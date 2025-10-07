@@ -16,3 +16,7 @@ git add <file-name>
 git ppush -u origin main 
 '''
 
+'''
+git add . ; git commit -m "some-massage"; git push -u origin main 
+'''
+
