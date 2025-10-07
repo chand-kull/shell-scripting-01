@@ -1,9 +1,18 @@
 # Shell Script
 **steps:**
+* create repo in github
+* clone repo in local laptop 
+* start developing 
+* add the files to tem area 
 '''
 git add <file-name>
 '''
-* git push origin main 
+* commit the changes
 '''
-* hey hai chandu how are you 
+* git cimmit -m "same massage"
 '''
+* push the changes to GITHUB/ Central repo
+'''
+git ppush -u origin main 
+'''
+
