@@ -6,6 +6,7 @@
 * clone repo in local laptop 
 * start developing 
 * add the files to tem area 
+'''
 
 git add <file-name>
 '''
