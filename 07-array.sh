@@ -8,7 +8,7 @@ ITEMS=("CAR" "FLIGHT" "BICKES")
 
 #list always starts with 0.
 
-echo "First item is : ${car}"
-echo "second item is: ${flight}"
-echo "third item is : ${bickes}"
+echo "First item is : ${ITEMS}"
+echo "second item is: ${ITEMS}"
+echo "third item is : ${ITEMS}"
     
