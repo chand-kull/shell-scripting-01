@@ -10,5 +10,5 @@ ITEMS=("CAR" "FLIGHT" "BICKES")
 
 echo "First item is : ${ITEMS}"
 echo "second item is: ${ITEMS}"
-echo "third item is : ${ITEMS}"
+echo "third item is : ${ITEMS[@]}"
     
