@@ -2,11 +2,11 @@
 
 echo " please enter username::"
 
-read USERNAME #HEAR USERNAME IS VARIABLE 
+read -s USERNAME #HEAR USERNAME IS VARIABLE 
 
 echo "please enter password::"
 
-read PASSWORD
+read -s PASSWORD
 
 echo "username is: $USERNAME, password is : $PASSWORD"
 
