@@ -11,7 +11,7 @@ then
 
 fi
 
-yum install mysql -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]
 then
@@ -21,7 +21,7 @@ else
     echo "installation of mysql ........SUCCESS"
 fi    
 
-yum install git -y
+dnf install git -y
 
 if [ $? -ne 0 ]
 then

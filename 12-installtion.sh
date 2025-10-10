@@ -10,7 +10,7 @@ else
     echo "you are super user."
 fi
 
-yum install git -y
+dnf install git -y
 
 if [ $? -ne 0 ]  
 then
@@ -20,7 +20,7 @@ else
     echo "installation of git ........success."    
 fi
 
-yum install mysql -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]  
 then
@@ -30,7 +30,7 @@ else
     echo "installation of mysql ........success."    
 fi
  
-yum install docker -y
+dnf install docker -y
 
 if [ $? -ne 0 ]  
 then
