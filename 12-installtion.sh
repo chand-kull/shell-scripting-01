@@ -40,3 +40,11 @@ else
     echo "installation of docker ........success."    
 fi
   
+dnf install maven -y
+if [ $? -ne 0 ]  
+then
+    echo "installation of docker .....failure"
+    exit 1
+else 
+    echo "installation of docker ........success."    
+fi
