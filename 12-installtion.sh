@@ -29,3 +29,14 @@ then
 else 
     echo "installation of mysql ........success."    
 fi
+ 
+yum install docker -y
+
+if [ $? -ne 0 ]  
+then
+    echo "installation of docker .....failure"
+    exit 1
+else 
+    echo "installation of docker ........success."    
+fi
+  
