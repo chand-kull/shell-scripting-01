@@ -11,13 +11,13 @@ then
 else
  echo "super user"
 fi
-# dn install nginx -y
-if [$? -ne 0]
-then 
- echo "instalin nginx is failure"
-else 
- echo" installing nginx is success"
-fi
+# # dn install nginx -y
+# if [$? -ne 0]
+# then 
+#  echo "instalin nginx is failure"
+# else 
+#  echo" installing nginx is success"
+# fi
 
 VALIDATE(){
    if [$1 -ne 0]
