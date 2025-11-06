@@ -1,7 +1,7 @@
 #!/bin/bash
 USERID=$(id -u) 
 TIMESTAMP=$(date +%F-%H-%M-%S) # to check time
-SCRIPT_NAME=$($0 | cut -d "." -f1) #script name
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1) #script name
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #to save script name with time
 
 if [$USERID -ne 0] 
