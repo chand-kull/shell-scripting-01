@@ -6,7 +6,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #to save script name with time
 
 
 
-if [$USERID -ne 0] # here it seems exit status= 0 and root user id of root =0 
+if [ $USERID -ne 0 ] # here it seems exit status= 0 and root user id of root =0 
 then
   echo "please run this scipt with root acess"
   exit 1 # manully exit if error comes
