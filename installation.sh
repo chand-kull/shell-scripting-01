@@ -13,7 +13,7 @@ fi
 
 echo "is script proceeding"
 
-dnf install mysql -y
+dnf install mysql -y 
 if [ $? -ne 0]
 then
 echo " installaton of mysql is .....failure"
