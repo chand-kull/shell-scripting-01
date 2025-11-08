@@ -3,7 +3,8 @@ USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S) # to check time
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1) #script name
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #to save script name with time
-
+R="\e[31m"
+G="\e[32m"
 
 
 if [ $USERID -ne 0 ] # here it seems exit status= 0 and root user id of root =0 
@@ -29,7 +30,7 @@ do
  dnf list installed $i &>>$LOGFILE
  if [ $? -eq 0 ]
  then
-  echo "$i already installed ......SKIPPING"
+  echo  -e "$i already installed ...... $G SKIPPING $G"
  else
   echo "$i not installed.... NEED TO INSTALl"
  fi
