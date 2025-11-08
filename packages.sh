@@ -18,9 +18,9 @@ validate(){
  if [ $1 -ne 0 ]
   echo "$2.....FAILURE"
   exit 1
-else
- echo "$2....SUCCESS"
-fi
+ else
+  echo "$2....SUCCESS"
+ fi
 }
 
 for i in $@
