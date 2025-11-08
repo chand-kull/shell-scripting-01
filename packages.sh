@@ -5,6 +5,7 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1) #script name
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log #to save script name with time
 R="\e[31m"
 G="\e[32m"
+N="\e[0m"
 
 
 if [ $USERID -ne 0 ] # here it seems exit status= 0 and root user id of root =0 
@@ -15,14 +16,14 @@ else
  echo "super user"
 fi
 
-# validate(){
-#  if [ $1 -ne 0 ]
-#   echo "$2.....FAILURE"
-#   exit 1
-#  else
-#   echo "$2....SUCCESS"
-#  fi
-# }
+validate(){
+ if [ $1 -ne 0 ]
+  echo "$2..... $R FAILURE $N"
+  exit 1
+ else
+  echo "$2.... $G SUCCESS $N"
+ fi
+}
 
 for i in $@
 do 
@@ -32,6 +33,7 @@ do
  then
   echo  -e "$i already installed ...... $G SKIPPING $N"
  else
-  echo "$i not installed.... NEED TO INSTALl"
+  dnf install $i -y &>>$LOGFILE
+  VALIDATE $? "installation of $i"
  fi
 done
