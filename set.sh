@@ -2,11 +2,18 @@
  # first check super user r not 
  # if super user proceed ,if not should throw  error
  set -e 
+ handle_error(){
+    echo "Error occured at line  number $1: error command: $2"
+ }
+ failure(){
+    echo "Failed at $1:$2"
+ }
+ trap 'failed ${LINENO} "$BASH_COMMAND"' ERR #to identify which line number error got
 
- USERID=$(id -u)
+ USERID=$(id -u) #ERR
  
 
- if [ $USERID -ne 0 ] # here it seems exit status= 0 and root user id of root =0 
+ if [ $USERID -ne 1 ] 
  then
   echo "please run this scipt with root acess"
   exit 1 # manully exit if error comes
