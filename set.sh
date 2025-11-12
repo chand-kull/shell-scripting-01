@@ -4,7 +4,7 @@
  set -e 
  
  failure(){
-    echo "Failed at $1:$2"
+    echo "Failed at $1: $2"
  }
 
  trap 'failed ${LINENO} "$BASH_COMMAND"' ERR #to identify which line number error got
