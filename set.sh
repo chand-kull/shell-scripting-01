@@ -14,8 +14,7 @@
  echo "super user"
  fi
 
- echo "is script proceeding"
-
+ 
  dnf install mysqlee -y 
  dnf install git -y 
 
