@@ -13,7 +13,7 @@
  USERID=$(id -u) #ERR
  
 
- if [ $USERID -ne 1 ] 
+ if [ $USERID -ne 0 ] 
  then
   echo "please run this scipt with root acess"
   exit 1 # manully exit if error comes
