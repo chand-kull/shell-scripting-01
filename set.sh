@@ -2,9 +2,7 @@
  # first check super user r not 
  # if super user proceed ,if not should throw  error
  set -e 
- handle_error(){
-    echo "Error occured at line  number $1: error command: $2"
- }
+ 
  failure(){
     echo "Failed at $1:$2"
  }
