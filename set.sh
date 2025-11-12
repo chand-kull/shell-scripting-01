@@ -3,6 +3,7 @@
  # if super user proceed ,if not should throw  error
 
  USERID=$(id 0)
+ set -e 
 
  if [$USERID -ne 0] # here it seems exit status= 0 and root user id of root =0 
  then
