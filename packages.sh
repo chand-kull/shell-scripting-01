@@ -30,13 +30,15 @@ for i in $@
 do 
  echo "packages to install :$i"
  dnf list installed $i &>>$LOGFILE
+
  if [ $? -eq 0 ]
  then
-  echo  -e "$i already installed ...... $G SKIPPING $N"
+   echo  -e "$i already installed ...... $G SKIPPING $N"
  else
- 
-  dnf install $i -y &>>$LOGFILE
-  VALIDATE $? "installation of $i"
-
+   dnf install $i -y &>>$LOGFILE
+   VALIDATE $? "installation of $i"
  fi
+
 done
+
+
