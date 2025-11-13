@@ -13,9 +13,14 @@ else
 fi
 
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +5)
-
 echo "files to delete : $FILES"
-
-
+while IFS= read -r file; do
+  if [ -f "$file" ]; then
+    echo "Deleting: $file"
+    
+  else
+    echo "File not found: $file"
+  fi
+done < "$file_list"
 
 
