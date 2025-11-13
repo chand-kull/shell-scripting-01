@@ -14,7 +14,7 @@ fi
 
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +5)
 
-echo "files to delete $FILES"
+echo "files to delete : $FILES"
 
 
 
