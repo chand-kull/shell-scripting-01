@@ -19,6 +19,6 @@ while IFS= read -r file; do
     echo "Deleting: $file"
     
  
-done < "$FILES"
+done <<< "$FILES"
 
 
