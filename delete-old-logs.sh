@@ -18,9 +18,7 @@ while IFS= read -r file; do
   if [ -f "$file" ]; then
     echo "Deleting: $file"
     
-  else
-    echo "File not found: $file"
-  fi
-done < "$file_list"
+ 
+done < "$FILES"
 
 
