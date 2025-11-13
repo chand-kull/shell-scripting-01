@@ -13,12 +13,8 @@ else
 fi
 
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +5)
-echo "files to delete : $FILES"
-while IFS= read -r file; do
-  if [ -f "$file" ]; then
-    echo "Deleting: $FILES"
-    
- 
+while IFS= read -r line ; do #internal field seperator  
+    echo "Deleting files : $line" 
 done <<< "$FILES"
 
 
