@@ -14,7 +14,7 @@ do
     echo "$FOLDER is more than $DISK_THRESHOLD%, current usage: $USAGE%"
   fi
 done <<< "$DISK_USAGE"
-echo "Message: $MESSAGE
+echo "Message: $MESSAGE"
 
 
 
